@@ -6,11 +6,17 @@
 
 ## RgLoadingController
   这是一个静态类方法，可以选择在加载的时候，有默认的菊花类型和 gif 动态图类型，
-  如果是想在加载时候显示 gif 图片，[RgLoadingController showLoadingActivityViewOn:self hudType:RgLoadingGIF titleOrGif:@"RgRefresh"]，其中 @"RgRefresh" 这个代表了 gif 的项目中的名称，
+  如果是想在加载时候显示 gif 图片
+  ```
+  [RgLoadingController showLoadingActivityViewOn:self hudType:RgLoadingGIF titleOrGif:@"RgRefresh"]
+  ```
+  其中 @"RgRefresh" 这个代表了 gif 的项目中的名称，
   当然，你也可以使用 MBProgressHUD 一些默认的效果，只不过在线程上，我修改了，做了一些同步，就是在显示加载的时候，只能同时存在最多一个 菊花的效果，而且也只需要一行代码就能搞定。
+  ```
   [RgLoadingController showLoadingSoonDisplayActivityViewOn:self hudType:RgLoadingDefault titleOrGif:@"哈哈哈" withAfter:2 withComplete:^{
         NSLog(@"执行完之后打印出回调函数 block");
     }]
+  ```
     
 <!--## RogueCache
   一个简单的缓存类，利用 NSUserDefaults 来设置缓存，他和另一个类型 RogueViewControllerTranstion(这是下一个会讲述的内容)结合着使用，他是全局单例变量，比如下列的方法
