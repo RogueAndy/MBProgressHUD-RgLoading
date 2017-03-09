@@ -2,7 +2,7 @@
   该库是自己在空闲时间把MBProgressHUD封装的更简单，让自己用起来更方便，但是发现越来越喜欢一些简单的封装，然后，，，有空就无聊写一点简单的东西，也希望自己的 pod 能够被大家使用，好吧，这类库中，有三个比较完整点的功能。
 
 ## 导入 pod 方法
-  暂时只支持 pod,    pod 'RogueKit2'
+  pod 'MBProgressHUD-RgLoading', '~> 0.1.0'
 
 ## RgLoginViewController
   这是一个静态类方法，可以选择在加载的时候，有默认的菊花类型和 gif 动态图类型，
