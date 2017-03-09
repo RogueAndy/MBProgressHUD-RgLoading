@@ -4,7 +4,7 @@
 ## 导入 pod 方法
   pod 'MBProgressHUD-RgLoading', '~> 0.1.0'
 
-## RgLoginViewController
+## RgLoadingController
   这是一个静态类方法，可以选择在加载的时候，有默认的菊花类型和 gif 动态图类型，
   如果是想在加载时候显示 gif 图片，[RgLoadingController showLoadingActivityViewOn:self hudType:RgLoadingGIF titleOrGif:@"RgRefresh"]，其中 @"RgRefresh" 这个代表了 gif 的项目中的名称，
   当然，你也可以使用 MBProgressHUD 一些默认的效果，只不过在线程上，我修改了，做了一些同步，就是在显示加载的时候，只能同时存在最多一个 菊花的效果，而且也只需要一行代码就能搞定。
@@ -12,7 +12,7 @@
         NSLog(@"执行完之后打印出回调函数 block");
     }]
     
-## RogueCache
+<!--## RogueCache
   一个简单的缓存类，利用 NSUserDefaults 来设置缓存，他和另一个类型 RogueViewControllerTranstion(这是下一个会讲述的内容)结合着使用，他是全局单例变量，比如下列的方法
   + (void)setSessionValues:(nullable RogueUserObject *)user;这是存储缓存的方法，这里要申明一下，如果要在项目中使用，那么缓存的类型，必须继承于RogueUserObject，才能设置缓存，否则，执行该方法时，程序会 Crash，
   当然，比如用户状态改变，例如登陆退出之类，想用通知来改变程序的一些权限，可以使用这个方法，+ (void)refreshUserSession:(nullable RogueUserObject *)user;该方法是用来刷新用户信息，可以传空值，这个方法必须最好是结合+ (void)notificationResponseWithBlock:(nonnull void (^)(NSString * _Nonnull key))response方法来使用，举个例子，在 ViewController 控制器中，先写入如下方法：__weak RgMBViewController    *weakSelf = self;
@@ -34,6 +34,6 @@
             [RogueCache shareInstance].transtionDuration = 0.4;
             前者是转场效果，后者是转场时间。
             
-暂时就这些简单的东西，本来还有一些结构上的封装，但是想到有待测试，所以就以后再放出来，所以，如果这里的程序有bug，希望大家能够指出，本人一定好好的修改，谢谢。
+暂时就这些简单的东西，本来还有一些结构上的封装，但是想到有待测试，所以就以后再放出来，所以，如果这里的程序有bug，希望大家能够指出，本人一定好好的修改，谢谢。-->
 
 
