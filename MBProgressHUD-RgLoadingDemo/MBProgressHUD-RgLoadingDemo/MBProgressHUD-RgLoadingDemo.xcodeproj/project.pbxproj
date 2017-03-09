@@ -14,6 +14,7 @@
 		8256025A1E6FDA4D00D93BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825602591E6FDA4D00D93BA0 /* Assets.xcassets */; };
 		8256025D1E6FDA4D00D93BA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8256025B1E6FDA4D00D93BA0 /* LaunchScreen.storyboard */; };
 		825602671E6FDC7400D93BA0 /* RgLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825602661E6FDC7400D93BA0 /* RgLoadingController.m */; };
+		8256026A1E712B1C00D93BA0 /* UIImageView+RgGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 825602691E712B1C00D93BA0 /* UIImageView+RgGIF.m */; };
 		93D9E25FA2201FF54A0AC983 /* libPods-MBProgressHUD-RgLoadingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C459C53E787DA9403238D277 /* libPods-MBProgressHUD-RgLoadingDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		8256025E1E6FDA4D00D93BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		825602651E6FDC7400D93BA0 /* RgLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLoadingController.h; sourceTree = "<group>"; };
 		825602661E6FDC7400D93BA0 /* RgLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoadingController.m; sourceTree = "<group>"; };
+		825602681E712B1C00D93BA0 /* UIImageView+RgGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RgGIF.h"; sourceTree = "<group>"; };
+		825602691E712B1C00D93BA0 /* UIImageView+RgGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RgGIF.m"; sourceTree = "<group>"; };
 		BBC17C0D8AD0FEF5FA9D51AF /* Pods-MBProgressHUD-RgLoadingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProgressHUD-RgLoadingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBProgressHUD-RgLoadingDemo/Pods-MBProgressHUD-RgLoadingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C459C53E787DA9403238D277 /* libPods-MBProgressHUD-RgLoadingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBProgressHUD-RgLoadingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +105,8 @@
 		825602641E6FDC7400D93BA0 /* MBProgressHUD-RgLoading */ = {
 			isa = PBXGroup;
 			children = (
+				825602681E712B1C00D93BA0 /* UIImageView+RgGIF.h */,
+				825602691E712B1C00D93BA0 /* UIImageView+RgGIF.m */,
 				825602651E6FDC7400D93BA0 /* RgLoadingController.h */,
 				825602661E6FDC7400D93BA0 /* RgLoadingController.m */,
 			);
@@ -242,6 +247,7 @@
 			files = (
 				825602551E6FDA4D00D93BA0 /* ViewController.m in Sources */,
 				825602521E6FDA4D00D93BA0 /* AppDelegate.m in Sources */,
+				8256026A1E712B1C00D93BA0 /* UIImageView+RgGIF.m in Sources */,
 				8256024F1E6FDA4D00D93BA0 /* main.m in Sources */,
 				825602671E6FDC7400D93BA0 /* RgLoadingController.m in Sources */,
 			);
@@ -406,6 +412,7 @@
 				825602631E6FDA4D00D93BA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -326,14 +326,6 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
 
 - (void)showLoadingActivityView:(MBProgressHUDMode)mode {
     
-    if([_hud respondsToSelector:@selector(showAnimated:)]) {
-    
-        NSLog(@"ddd");
-    
-    }
-    
-    return;
-    
     [_hud setMode:mode];
     [self addToAllLoadingActivityViewControllers];
     [_hud showAnimated:YES];
